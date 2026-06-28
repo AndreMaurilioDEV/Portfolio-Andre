@@ -7,7 +7,7 @@ export type Project = {
   skills: string[];
   repo?: string;
   accent: "cyan" | "purple" | "emerald";
-  icon: "scissors" | "smartphone" | "shield";
+  icon: "scissors" | "smartphone" | "shield" | "hospital";
 };
 
 export const projects: Project[] = [
@@ -30,7 +30,7 @@ export const projects: Project[] = [
       "Sistema de fidelidade com pontos e níveis",
     ],
     skills: ["Java", "Spring Boot", "Spring Security", "JWT", "OAuth2", "Spring Data JPA", "MySQL", "Maven", "REST APIs", "Git"],
-    repo: "https://github.com/AndreMaurilioDEV",
+    repo: "https://github.com/AndreMaurilioDEV/Barbearia-back-end",
     accent: "cyan",
     icon: "scissors",
   },
@@ -50,30 +50,45 @@ export const projects: Project[] = [
       "Organização e versionamento com Git",
     ],
     skills: ["Android", "Java", "Kotlin", "SQLite", "ViewPager2", "Fragments", "ConstraintLayout", "Git"],
-    repo: "https://github.com/AndreMaurilioDEV",
+    repo: "https://github.com/AndreMaurilioDEV/Pivot",
     accent: "purple",
     icon: "smartphone",
   },
-  {
-    id: "auth-jwt",
-    title: "Sistema de Autenticação JWT",
+    {
+    id: "clinica-backend",
+    title: "ClinicCenter",
     short:
-      "API de autenticação com controle de usuários, roles e proteção de rotas.",
+      "Backend para gestão de clínica com pacientes, médicos, consultas, autenticação JWT e recuperação de senha.",
     description:
-      "API focada em autenticação e autorização, com geração e validação de tokens JWT, hierarquia de roles, proteção granular de rotas e boas práticas de segurança para integração em qualquer backend Spring Boot.",
+      "API REST desenvolvida com Java e Spring Boot para centralizar a operação de uma clínica, incluindo autenticação segura com JWT, cadastro de pacientes, médicos e colaboradores, agendamento de consultas, controle de status, envio de e-mails para recuperação de senha e documentação interativa com Swagger/OpenAPI.",
     features: [
-      "Registro e login de usuários",
-      "Geração e validação de JWT",
-      "Controle de roles e permissões",
-      "Filtros de segurança Spring Security",
-      "Hash de senhas com BCrypt",
-      "Refresh token e expiração de sessão",
+      "Autenticação com JWT",
+      "Controle de usuários e permissões",
+      "Cadastro e gerenciamento de pacientes",
+      "Cadastro e gerenciamento de médicos",
+      "Agendamento de consultas",
+      "Controle de status de pacientes e consultas",
+      "Recuperação de senha por e-mail",
+      "Criptografia de senhas com BCrypt",
+      "Tratamento global de exceções",
+      "Documentação com Swagger/OpenAPI",
     ],
-    skills: ["Java", "Spring Boot", "Spring Security", "JWT", "MySQL", "JPA"],
-    repo: "https://github.com/AndreMaurilioDEV",
+    skills: [
+      "Java",
+      "Spring Boot",
+      "Spring Security",
+      "JWT",
+      "Spring Data JPA",
+      "MySQL",
+      "Spring Mail",
+      "Swagger/OpenAPI",
+      "Maven",
+      "REST APIs",
+    ],
+    repo: "https://github.com/AndreMaurilioDEV/ClinicaBackEnd",
     accent: "emerald",
-    icon: "shield",
-  },
+    icon: "hospital",
+  }
 ];
 
 export const skillsByCategory: { category: string; items: string[] }[] = [

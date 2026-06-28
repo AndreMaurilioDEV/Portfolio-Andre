@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowUpRight, Github, Scissors, Smartphone, Shield, X, Sparkles } from "lucide-react";
+import { ArrowUpRight, Github, Scissors, Smartphone, Shield, X, Sparkles, Hospital } from "lucide-react";
 import { Section, fadeUp } from "./Section";
 import { projects, type Project } from "./data";
 
-const iconMap = { scissors: Scissors, smartphone: Smartphone, shield: Shield };
+const iconMap = { scissors: Scissors, smartphone: Smartphone, shield: Shield, hospital: Hospital };
 const accentMap = {
   cyan: "from-cyan/30 to-primary/20",
   purple: "from-purple/30 to-accent/20",
